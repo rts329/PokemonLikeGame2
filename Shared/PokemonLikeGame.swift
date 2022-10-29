@@ -69,7 +69,9 @@ class GameScene:SKScene {
         var newLocation = CGVector(dx: 0, dy: 0)
         let playerSpeed = CGPoint(x: 100, y: 100)
         var playerAnimation:Array<SKTexture>
-        
+        let collisions:Array<CGPoint> = [CGPoint(x: centerOfScreen.x, y: centerOfScreen.y + 200)]
+        // let fence = CGRectangle(x: -811, y: 518, width: 832, height: 16)
+        // let house = CGRectangle(x: 95, y: -95, width: 200, height: 390)
         // Player cannot move diagonally. So, determine which is greater,
         // x or y, and move accordingly.
         
@@ -94,10 +96,18 @@ class GameScene:SKScene {
                 playerAnimation = playerWalkDown
             }
         }
-        
-        myMap.run(SKAction.move(by: newLocation, duration: 1))
+        let newMapPosition = CGPoint(x: myMap.position.x + newLocation.dx, y: myMap.position.y + newLocation.dy)
+        var collisionDetected = false
+        for point in collisions {
+            if (abs(point.x - newMapPosition.x) < playerSpeed.x && abs(point.y - newMapPosition.y) < playerSpeed.y) {
+                collisionDetected = true
+            }
+        }
+        if collisionDetected == false {
+            myMap.run(SKAction.move(by: newLocation, duration: 1))
+        }
         playerSprite.run(SKAction.repeat(SKAction.animate(with: playerAnimation, timePerFrame: 0.2), count: 1))
-
+        print(myMap.position)
     }
 }
 
