@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B075930290E940100B246EC /* Collisions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B07592F290E940100B246EC /* Collisions.swift */; };
 		0B160B3F28FCD86A00E8DAE3 /* Sprites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B160B3E28FCD86A00E8DAE3 /* Sprites.swift */; };
 		0B1960A628FB5F6F004240A7 /* PokemonLikeGameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B19609628FB5F6E004240A7 /* PokemonLikeGameApp.swift */; };
 		0B1960A728FB5F6F004240A7 /* PokemonLikeGameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B19609628FB5F6E004240A7 /* PokemonLikeGameApp.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B07592F290E940100B246EC /* Collisions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collisions.swift; sourceTree = "<group>"; };
 		0B160B3E28FCD86A00E8DAE3 /* Sprites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sprites.swift; sourceTree = "<group>"; };
 		0B19609628FB5F6E004240A7 /* PokemonLikeGameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonLikeGameApp.swift; sourceTree = "<group>"; };
 		0B19609728FB5F6E004240A7 /* PokemonLikeGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonLikeGame.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				0B1960B628FB6094004240A7 /* SpriteSheet.swift */,
 				0B160B3E28FCD86A00E8DAE3 /* Sprites.swift */,
 				0B19609828FB5F6F004240A7 /* Assets.xcassets */,
+				0B07592F290E940100B246EC /* Collisions.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -189,6 +192,7 @@
 				0B1960A828FB5F6F004240A7 /* PokemonLikeGame.swift in Sources */,
 				0B160B3F28FCD86A00E8DAE3 /* Sprites.swift in Sources */,
 				0B1960A628FB5F6F004240A7 /* PokemonLikeGameApp.swift in Sources */,
+				0B075930290E940100B246EC /* Collisions.swift in Sources */,
 				0B1960B528FB6063004240A7 /* ControllerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
